@@ -1,0 +1,52 @@
+# config.yaml — Template de configuração
+# Copiar para config/ no repositório do deep-eye
+# NUNCA versionar com API keys reais
+
+ai_providers:
+  openai:
+    enabled: false
+    api_key: "INSERIR_AQUI"
+    model: "gpt-4o"
+
+  claude:
+    enabled: true          # Preferido para análise e relatórios
+    api_key: "INSERIR_AQUI"
+    model: "claude-3-5-sonnet-20241022"
+
+  grok:
+    enabled: false
+    api_key: "INSERIR_AQUI"
+
+  ollama:
+    enabled: false         # Ativar para uso offline / air-gapped
+    base_url: "http://localhost:11434"
+    model: "llama2"        # Alternativas: mistral, codellama
+
+  openrouter:
+    enabled: false
+    api_key: "INSERIR_AQUI"
+    model: "openai/gpt-4o"
+
+scanner:
+  threads: 10
+  depth: 3
+  timeout: 30
+  verify_ssl: true
+  user_agent: "Mozilla/5.0 (compatible; SecurityScanner/1.0)"
+
+notifications:
+  telegram:
+    enabled: false
+    bot_token: "INSERIR_AQUI"
+    chat_id: "INSERIR_AQUI"
+  slack:
+    enabled: false
+    webhook_url: "INSERIR_AQUI"
+  email:
+    enabled: false
+
+reporting:
+  default_format: "html"   # pdf / html / json
+  output_dir: "./reports"
+  include_osint: true
+  include_executive_summary: true
