@@ -109,6 +109,22 @@ Resultado:
 
 ---
 
+### 🔍 [SOC] Deep Eye — Scanner IA & Estudo de Detecção
+
+```
+Projeto    → Framework de pentest orientado a IA (Deep Eye)
+Contexto   → Estudo de vetores de ataque para melhoria de detecção no SIEM/Wazuh
+Pasta      → conteudo-cyber/
+Status     → Arquitetura mapeada e ambiente de lab em setup
+
+Resultado:
+  ├── Mapeamento de 45+ módulos de ataque para táticas MITRE ATT&CK
+  ├── Pipeline de estudo: Ofensiva IA → Captura SOC → Regra de Detecção
+  └── Documentação técnica de arquitetura, módulos e fluxo de execução
+```
+
+---
+
 ### 🔍 [SOC] Pipeline de Threat Intelligence Automatizado
 
 ```
